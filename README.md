@@ -1,3 +1,7 @@
+This repo exists to allow me to use my custom vim config on any device.
+
+
+
 (Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md))
 
 

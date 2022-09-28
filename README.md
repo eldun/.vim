@@ -1,8 +1,10 @@
-#Overview
+# Overview
 
 This repo exists to allow me to use my custom vim config on any device.
 
 Any additions that require explanation will be addressed in the next section.
+
+Initial setup completed following [this guide](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/) at [freecodecamp.com](freecodecamp.com)
 
 # Additions
 
@@ -10,16 +12,17 @@ Any additions that require explanation will be addressed in the next section.
 
 
 
+# Useful Links
+
 (Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md))
 
 
 
-# Vim as an IDE
+## Vim as an IDE
 * [How to Turn Vim Into a Lightweight IDE](https://dane-bulat.medium.com/how-to-turn-vim-into-a-lightweight-ide-6185e0f47b79)
 * [Vim: Setting up a Build System and Code Completion for C and C++](https://dane-bulat.medium.com/vim-setting-up-a-build-system-and-code-completion-for-c-and-c-eb263c0a19a1)
 
-## References / Sources
-Information about Vim
+## Information about Vim
 
 * [The Vim Editor][01]
 * [The Recipes][02]
@@ -28,7 +31,7 @@ Information about Vim
 * [Getting started with Vim visual mode][15]
 * [How Did Vim Become So Popular][16]
 
-Vim Scripting Tutorials
+## Vim Scripting Tutorials
 
 * Run the Linux Vim tutorial program - Linux program "vimtutor"
 * [Vim Introduction and Tutorial][04]
@@ -38,7 +41,7 @@ Vim Scripting Tutorials
 * [:best of Vim][10]
 * [Scripting the Vim editor, Part 1: Variables, values, and expressions][12]
 
-Maintaining and Synchronizing Vim on Other Machines
+## Maintaining and Synchronizing Vim on Other Machines
 
 * [Working with submodules][13]
 * [Git Submodules: Adding, Using, Removing, Updating][14]

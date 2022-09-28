@@ -1,4 +1,12 @@
+#Overview
+
 This repo exists to allow me to use my custom vim config on any device.
+
+Any additions that require explanation will be addressed in the next section.
+
+# Additions
+
+
 
 
 
@@ -6,7 +14,7 @@ This repo exists to allow me to use my custom vim config on any device.
 
 
 
-# Vim as a IDE
+# Vim as an IDE
 * [How to Turn Vim Into a Lightweight IDE](https://dane-bulat.medium.com/how-to-turn-vim-into-a-lightweight-ide-6185e0f47b79)
 * [Vim: Setting up a Build System and Code Completion for C and C++](https://dane-bulat.medium.com/vim-setting-up-a-build-system-and-code-completion-for-c-and-c-eb263c0a19a1)
 
@@ -22,7 +30,7 @@ Information about Vim
 
 Vim Scripting Tutorials
 
-* Run the Linux Vim tutorial program - Linux program called "vimtutor"
+* Run the Linux Vim tutorial program - Linux program "vimtutor"
 * [Vim Introduction and Tutorial][04]
 * [Learn Vimscript the Hard Way][05]
 * [25 Vim Tutorials, Screencasts, and Resources][06]
@@ -37,8 +45,7 @@ Maintaining and Synchronizing Vim on Other Machines
 * [Submodules and Pathogen][08]
 * [Git Reference][09]
 
-## Sources
-These are the sources for the commands documented above in the tables.
+## Other Links
 
 * [100 Vim commands every programmer should know](http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-know)
 * [How to Use Vim's Spellchecker](http://tips.webdesign10.com/vim/how-use-vims-spellchecker)
@@ -48,9 +55,6 @@ These are the sources for the commands documented above in the tables.
 * [Vim Commands Cheat Sheet](http://bullium.com/support/vim.html)
 * [How to copy text from vim to an external program?](http://unix.stackexchange.com/questions/12535/how-to-copy-text-from-vim-to-an-external-program)
 
-## Requires More Research
-These links should be explored to see what additional information
-could be gathered for this cheat sheet.
 
 * [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/)
 * [A Vim Guide for Intermediate Users](https://thevaluable.dev/vim-intermediate/)

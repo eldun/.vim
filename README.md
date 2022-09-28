@@ -8,7 +8,7 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 
 # Additions
 
-
+Nothing to say here... yet.
 
 
 

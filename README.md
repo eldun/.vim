@@ -1,4 +1,4 @@
-(Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md)
+(Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md))
 
 
 

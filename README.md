@@ -10,8 +10,8 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 
 # Custom Additions
 - Toggle statusline with '\s'
-- Toggle search highlighing with '\\'
-- Toggle line numbers with '\\\'
+- Toggle search highlighing with '\\\\'
+- Toggle line numbers with '\\\\\\'
 
 # Useful Links
 

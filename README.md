@@ -8,11 +8,10 @@ Any additions that require explanation will be addressed in the next section.
 
 Initial setup completed following [this guide](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/) at [freecodecamp.com](freecodecamp.com)
 
-# Additions
-
-Nothing to say here... yet.
-
-
+# Custom Additions
+- Toggle statusline with '\s'
+- Toggle search highlighing with '\\'
+- Toggle line numbers with '\\\'
 
 # Useful Links
 

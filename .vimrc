@@ -14,18 +14,18 @@ filetype indent on
 syntax on
 
 " Set default theme
-colorscheme slate
+" colorscheme slate
 
-" Add numbers to each line on the left-hand side.
-set number
+" Hide line numbers by default (toggle with '\\\')
+set nonumber
 
-" Highlight cursor horizontally
-" set cursorline
-" highlight CursorColumn ctermbg=Black ctermfg=DarkGray
+" Highlight cursor horizontally and turn off underline
+ set cursorline
+ highlight CursorLine ctermbg=Black cterm=none
 
 " Highlight cursor vertically 
 set cursorcolumn
-highlight CursorColumn ctermbg=Black "ctermfg=DarkGray
+highlight CursorColumn ctermbg=Black
 
 
 " Set shift width to 4 spaces.
@@ -69,7 +69,7 @@ set showmatch
 set hlsearch
 
 " Set search highlight colors
-hi Search ctermbg=White
+hi Search ctermbg=Blue
 hi Search ctermfg=Black
 
 " Set the commands to save in history default number is 20.
@@ -117,11 +117,11 @@ inoremap jj <esc>
 " Press the space bar to type the : character in normal  mode.
 nnoremap <space> :
 
-" Control-/ clears last search (and therefore, the highlighting)
-noremap <silent> <c-_> :let @/ = ""<CR>
+" Leader+n to toggle line numbers
+nmap <leader>n :set invnumber<CR>
 
-" Triple-tap leader key to toggle line numbers
-:nmap <leader><leader><leader> :set invnumber<CR>
+" Toggle word-wrap
+noremap <leader>z :set wrap!<CR>
 
 " Center the cursor vertically when moving to the next word during a search.
 nnoremap n nzz
@@ -216,13 +216,44 @@ set laststatus=2
 " }}}
 
 " ABBREVIATIONS {{{
-iab teh the
-iab Teh The
 
-" BLOG POST ABBREVIATIONS {{{
-iab lw LWJGL"
-iab lws LWJGL's"
 
-"}}}
+
+    " ENGLISH ABBREVIATIONS{{{
+        iab teh the
+        iab Teh The
+    "}}}
+    
+    
+    "CODE ABBREVIATIONS {{{
+        " BASH {{{
+            iab shebang #!/bin/bash
+        "}}}
+
+        " C++ {{{
+        "}}}
+        
+        " JAVA {{{
+            iab psvm public static void main(String[] args)
+        "}}}
+
+        " JAVASCRIPT {{{
+        "}}}
+        
+        " PYTHON {{{
+        "}}}
+
+
+
+    "}}}
+
+
+
+    
+    " BLOG POST ABBREVIATIONS {{{
+    iab lw LWJGL
+    iab lws LWJGL's
+
+    "}}}
 
 "}}}

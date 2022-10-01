@@ -14,6 +14,12 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 - Toggle line numbers with '\\n'
 - Toggle word wrap with '\z
 
+# Things to Remember
+- Selecting in visual mode + CTRL-SHFT-C will copy to system clipboard
+
+# To-do
+- Follow [this guide](https://vimways.org/2018/from-vimrc-to-vim/) (Mostly for managing my growing list of abbreviations)
+
 # Useful Links
 
 (Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md))

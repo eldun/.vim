@@ -43,8 +43,8 @@ set nobackup
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=10
 
-" Do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+" Wrap lines by default. Toggle with \z.
+set wrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
@@ -69,14 +69,17 @@ set showmatch
 set hlsearch
 
 " Set search highlight colors
-hi Search ctermbg=Blue
-hi Search ctermfg=Black
+"hi Search ctermbg=DarkYellow
+highlight Search ctermfg=Black
 
 " Set the commands to save in history default number is 20.
 set history=1000
 
+" Set Fold highlighting
+highlight Folded ctermbg=Black ctermfg=Magenta
 
-
+" Set Parentheses highlighting
+highlight MatchParen cterm=bold ctermbg=Yellow ctermfg=Black
 
 
 " wildmenu options
@@ -243,8 +246,16 @@ set laststatus=2
         " PYTHON {{{
         "}}}
 
-
-
+        "MARKDOWN/HTML ABBREVIATIONS {{{
+            iab mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre>
+            iab mdimg ![alt](/assets/images/blog-images/xxxx.png)
+            iab mdlink  [name](link)
+            iab lt &lt;
+            iab gt &gt;
+            iab amp &amp;
+            iab quot &quot;
+            iab ast &#42;
+        "}}}
     "}}}
 
 

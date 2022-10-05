@@ -14,17 +14,14 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 - Toggle line numbers with '\\n'
 - Toggle word wrap with '\z
 
-# Things to Remember
-- Selecting in visual mode + CTRL-SHFT-C will copy to system clipboard
-
 # To-do
 - Follow [this guide](https://vimways.org/2018/from-vimrc-to-vim/) (Mostly for managing my growing list of abbreviations)
 
 # Useful Links
 
-(Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md))
+https://alvinalexander.com/linux/vi-vim-editor-color-scheme-syntax/
 
-
+(Edited version of [jeffskinnerbox's README](https://github.com/jeffskinnerbox/.vim/blob/main/README.md)):
 
 ## Vim as an IDE
 * [How to Turn Vim Into a Lightweight IDE](https://dane-bulat.medium.com/how-to-turn-vim-into-a-lightweight-ide-6185e0f47b79)

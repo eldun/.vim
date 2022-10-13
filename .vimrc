@@ -17,7 +17,6 @@ if has('syntax')
   syntax on
 endif
 
-
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
 " tab pages to edit multiple files, but it is still best to enable an option to
@@ -142,6 +141,13 @@ set hlsearch
 " Set search highlight colors
 "hi Search ctermbg=DarkYellow
 highlight Search ctermfg=Black
+
+" Save/load folds automatically
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
 
 " Set Fold highlighting
 highlight Folded ctermbg=Black ctermfg=Magenta

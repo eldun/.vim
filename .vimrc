@@ -17,6 +17,7 @@ if has('syntax')
   syntax on
 endif
 
+
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
 " tab pages to edit multiple files, but it is still best to enable an option to
@@ -39,7 +40,7 @@ set hidden
 " set autowriteall
 
 " Set default theme
-" colorscheme slate
+ colorscheme slate
 
 " Hide line numbers by default (toggle with '\\\')
 set nonumber
@@ -79,6 +80,8 @@ set wrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
+hi IncSearch cterm=NONE ctermfg=Black ctermbg=DarkYellow
+
 
 " Use case insensitive search, except when using capital letters
 set ignorecase
@@ -140,14 +143,7 @@ set hlsearch
 
 " Set search highlight colors
 "hi Search ctermbg=DarkYellow
-highlight Search ctermfg=Black
-
-" Save/load folds automatically
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
-augroup END
+highlight Search ctermfg=Black ctermbg=DarkYellow
 
 " Set Fold highlighting
 highlight Folded ctermbg=Black ctermfg=Magenta
@@ -188,8 +184,8 @@ nnoremap <leader><leader> :nohlsearch<CR>
 " Tap \s to toggle status bar 
 nnoremap <leader>s :call ToggleStatusLine()<CR>
 
-" Remap "jj" to escape while in insert mode
-inoremap jj <esc>
+" Remap "jk" to escape while in insert mode
+inoremap jk <esc>
 
 " Press the space bar to type the : character in normal  mode.
 nnoremap <space> :

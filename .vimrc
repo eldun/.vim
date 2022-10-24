@@ -326,7 +326,7 @@ set laststatus=2
 
         "MARKDOWN/HTML ABBREVIATIONS {{{
             iab mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre>
-            iab mdimg ![alt](/assets/images/blog-images/xxxx.png)
+            iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
             iab mdlink  [name](link)
             iab lt &lt;
             iab gt &gt;

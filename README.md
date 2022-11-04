@@ -2,8 +2,6 @@
 
 This repo exists to allow me to use my custom vim config on any device.
 
-I'm trying to stay away from plugins, useful as they may be.
-
 Any additions that require explanation will be addressed in the next section.
 
 Initial setup completed following [this guide](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/) at [freecodecamp.com](freecodecamp.com)

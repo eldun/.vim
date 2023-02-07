@@ -11,7 +11,13 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 - Toggle search highlighing with '\\\\'
 - Toggle line numbers with '\\n'
 - Toggle word wrap with '\z
-- Holy moly - this isn't an addition, but don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J
+- Open help in new tab by default (instead of horizontal split)
+
+# Helpful Things to Remember
+- Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!
+- [Difference in map commands](https://stackoverflow.com/a/3776182)
+- [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)
+- [Multi-line Editing (Visual Block mode)](https://stackoverflow.com/a/12399573)
 
 # To-do
 - Follow [this guide](https://vimways.org/2018/from-vimrc-to-vim/) (Mostly for managing my growing list of abbreviations)

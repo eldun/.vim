@@ -190,6 +190,9 @@ inoremap jk <esc>
 " Press the space bar to type the : character in normal  mode.
 nnoremap <space> :
 
+" Open the help window in a new tab.
+:cabbrev help tab help
+
 " Leader+n to toggle line numbers
 nmap <leader>n :set invnumber<CR>
 

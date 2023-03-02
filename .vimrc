@@ -337,6 +337,7 @@ set laststatus=2
             iab lt &lt;
             iab gt &gt;
             iab amp &amp;
+            iab apos &apos;
             iab quot &quot;
             iab ast &#42;
         "}}}

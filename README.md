@@ -8,6 +8,7 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 
 # Custom Additions
 - Toggle statusline with '\s'
+- Show buffers with tab-complete with '\b'
 - Toggle search highlighing with '\\\\'
 - Toggle line numbers with '\\n'
 - Toggle word wrap with '\z

@@ -40,7 +40,7 @@ set hidden
 " set autowriteall
 
 " Set default theme
- colorscheme slate
+" colorscheme delek
 
 " Hide line numbers by default (toggle with '\\\')
 set nonumber
@@ -181,13 +181,16 @@ let mapleader = '\'
 " Double-tap '\' to turn off search highlighting
 nnoremap <leader><leader> :nohlsearch<CR>
 
+" '\b' to list buffers and leave the cursor at an auto-completable position
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
+
 " Tap \s to toggle status bar 
 nnoremap <leader>s :call ToggleStatusLine()<CR>
 
 " Remap "jk" to escape while in insert mode
 inoremap jk <esc>
 
-" Press the space bar to type the : character in normal  mode.
+" Press the space bar to type the : character in normal mode.
 nnoremap <space> :
 
 " Open the help window in a new tab.
@@ -206,12 +209,10 @@ nnoremap N Nzz
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
 
-" Commented this out because I want to be able to use ctrl-j for jumping
-
-" nnoremap <c-j> <c-w>j
-" nnoremap <c-k> <c-w>k
-" nnoremap <c-h> <c-w>h
-" nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
@@ -318,6 +319,15 @@ set laststatus=2
         "}}}
 
         " C++ {{{
+            iab helloc++ #include <iostream>
+                        \<CR>
+                        \<CR>int main() {
+                        \<CR>
+                        \<CR>std::cout << "Hello World!";
+                        \<CR>return 0;
+                        \<CR>
+                        \<CR>}
+
         "}}}
         
         " JAVA {{{

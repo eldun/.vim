@@ -14,8 +14,9 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 - Toggle word wrap with '\z
 - Open help in new tab by default (instead of horizontal split)
 
-# Helpful Things to Remember
+# Things to Remember
 - Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!
+- Using [ctags](https://github.com/universal-ctags/ctags) ([Guide](https://learnvim.irian.to/basics/tags))
 - [Difference in map commands](https://stackoverflow.com/a/3776182)
 - [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)
 - [Multi-line Editing (Visual Block mode)](https://stackoverflow.com/a/12399573)

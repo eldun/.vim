@@ -17,6 +17,7 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 # Things to Remember
 - Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!
 - Using [ctags](https://github.com/universal-ctags/ctags) ([Guide](https://learnvim.irian.to/basics/tags))
+- `:args dir/*` to open multiple files in their own buffers from within VIM (vim dir/* from terminal)
 - [Difference in map commands](https://stackoverflow.com/a/3776182)
 - [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)
 - [Multi-line Editing (Visual Block mode)](https://stackoverflow.com/a/12399573)

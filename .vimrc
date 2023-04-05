@@ -223,7 +223,8 @@ noremap <c-right> <c-w><
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+" (VIM can't differentiate between c-f and c-F (https://vi.stackexchange.com/questions/4290/can-i-map-a-ctrl-upper-case-letter-separately-from-ctrl-lower-case-letter). This command was interfering with my ability to navigate windows, so I took it out. Double tapping '\' will remove search highlighting.)
+" nnoremap <C-L> :nohl<CR><C-L>
 
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,

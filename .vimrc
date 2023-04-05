@@ -40,7 +40,7 @@ set hidden
 " set autowriteall
 
 " Set default theme
-" colorscheme delek
+colorscheme slate
 
 " Hide line numbers by default (toggle with '\\\')
 set nonumber

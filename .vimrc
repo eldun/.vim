@@ -42,19 +42,19 @@ set hidden
 " Set default theme
 colorscheme slate
 
-" Hide line numbers by default (toggle with '\\\')
+" Hide line numbers by default (toggle with '\n')
 set nonumber
 
 " Highlight cursor horizontally and turn off underline
- set cursorline
- highlight CursorLine ctermbg=Black cterm=none
+set cursorline
+highlight CursorLine ctermbg=Black cterm=none
 
 " Highlight cursor vertically 
 set cursorcolumn
 highlight CursorColumn ctermbg=Black
 
 "------------------------------------------------------------
-" Indentation options {{{1
+" Indentation options {{{
 "
 " Indentation settings according to personal preference.
 
@@ -69,11 +69,13 @@ set expandtab
 "set shiftwidth=4
 "set tabstop=4
 
+" }}}
+
 " Do not save backup files.
 set nobackup
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
-set scrolloff=10
+set scrolloff=15
 
 " Wrap lines by default. Toggle with \z.
 set wrap

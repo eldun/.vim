@@ -2,17 +2,21 @@
 
 This repo exists to allow me to use my custom vim config on any device.
 
-Any additions that require explanation will be addressed in the next section.
-
 Initial setup completed following [this guide](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/) at [freecodecamp.com](freecodecamp.com)
 
 # Custom Additions
+
+## Mappings
+
 - Toggle statusline with '\s'
 - Show buffers with tab-complete with '\b'
 - Toggle search highlighing with '\\\\'
 - Toggle line numbers with '\\n'
 - Toggle word wrap with '\z
 - Open help in new tab by default (instead of horizontal split)
+
+## Packages/Plug-ins
+- [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 
 # Things to Remember
 - Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!

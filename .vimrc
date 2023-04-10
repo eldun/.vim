@@ -170,7 +170,8 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
-" Plugin code goes here.
+" Autocompletion (https://github.com/ycm-core/YouCompleteMe)
+packadd YouCompleteMe
 
 " }}}
 

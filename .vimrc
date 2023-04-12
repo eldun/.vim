@@ -39,16 +39,19 @@ set hidden
 " set confirm
 " set autowriteall
 
+" Set default theme
+" colorscheme slate
+
 " Hide line numbers by default (toggle with '\n')
 set nonumber
 
 " Highlight cursor horizontally and turn off underline
-set cursorline
-highlight CursorLine ctermbg=Black cterm=none
+" set cursorline
+" highlight CursorLine ctermbg=Black cterm=none
 
 " Highlight cursor vertically 
-set cursorcolumn
-highlight CursorColumn ctermbg=Black
+" set cursorcolumn
+" highlight CursorColumn ctermbg=Black
 
 "------------------------------------------------------------
 " Indentation options {{{
@@ -79,7 +82,7 @@ set wrap
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
-hi IncSearch cterm=NONE ctermfg=Black ctermbg=DarkYellow
+" hi IncSearch cterm=NONE ctermfg=Black ctermbg=DarkYellow
 
 
 " Use case insensitive search, except when using capital letters
@@ -136,20 +139,17 @@ set pastetoggle=<F11>
 " Show matching words during a search.
 set showmatch
 
-" Highlight searches (Use '\\' to toggle. Use <C-L> to temporarily turn off highlighting; see the
-" mapping of <C-L> below)
+" Highlight searches (Use '\\' to toggle)
 set hlsearch
 
 " Set search highlight colors
-"hi Search ctermbg=DarkYellow
 highlight Search ctermfg=Black ctermbg=DarkYellow
 
 " Set Fold highlighting
-highlight Folded ctermbg=Black ctermfg=Magenta
+highlight Folded ctermfg=White ctermbg=Black 
 
 " Set Parentheses highlighting
-highlight MatchParen cterm=bold ctermbg=Yellow ctermfg=Black
-
+" highlight MatchParen cterm=bold ctermbg=Yellow ctermfg=Black
 
 " wildmenu options
 " Enable auto completion menu after pressing TAB.

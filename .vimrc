@@ -127,7 +127,7 @@ if has('mouse')
 endif
 
 " Set the command window height to 2 lines, to avoid many cases of having to
-" "press <Enter> to continue"
+" 'press <Enter> to continue'
 set cmdheight=2
 
 " Use <F11> to toggle between 'paste'(no auto-indent) and 'nopaste'(auto-indent)

@@ -39,9 +39,6 @@ set hidden
 " set confirm
 " set autowriteall
 
-" Set default theme
-colorscheme slate
-
 " Hide line numbers by default (toggle with '\n')
 set nonumber
 

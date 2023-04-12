@@ -167,8 +167,23 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
+" YouCompleteMe
 " Autocompletion (https://github.com/ycm-core/YouCompleteMe)
 packadd YouCompleteMe
+
+" surround.vim
+" Quoting and parenthesizing made simple
+packadd surround
+
+" vim-airline
+" Custom statusline
+" packadd vim-airline
+" 
+" let g:airline_powerline_fonts = 1
+" 
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
 
 " }}}
 

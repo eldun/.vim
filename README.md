@@ -7,7 +7,6 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 # Custom Additions
 
 ## Mappings
-
 - Toggle statusline with '\s'
 - Show buffers with tab-complete with '\b'
 - Toggle search highlighing with '\\\\'
@@ -17,11 +16,12 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 
 ## Packages/Plug-ins
 - [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+- [surround.vim](https://github.com/tpope/vim-surround)
 
 # Things to Remember
 - Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!
 - Using [ctags](https://github.com/universal-ctags/ctags) ([Guide](https://learnvim.irian.to/basics/tags))
-- `:args dir/*` (or `:next dir/*`)to open multiple files in their own buffers from within VIM (vim dir/* from terminal)
+- `:args dir/&#42;` (or `:next dir/&#42;`)to open multiple files in their own buffers from within VIM (vim dir/&#42; from terminal)
 - [Difference in map commands](https://stackoverflow.com/a/3776182)
 - [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)
 - [Multi-line Editing (Visual Block mode)](https://stackoverflow.com/a/12399573)

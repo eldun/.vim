@@ -268,7 +268,7 @@ augroup cursor_off
 augroup END
 
 function ToggleStatusLine()
-    if &laststatus==?0
+    if &laststatus!=2
         set laststatus=2
     else
         set laststatus=0

@@ -164,7 +164,6 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 
 
-
 " PLUGINS ---------------------------------------------------------------- {{{
 
 " YouCompleteMe
@@ -186,7 +185,6 @@ packadd surround
 " endif
 
 " }}}
-
 
 " MAPPINGS --------------------------------------------------------------- {{{
 
@@ -249,7 +247,6 @@ map Y y$
 
 " }}}
 
-
 " VIMSCRIPT -------------------------------------------------------------- {{{
 
 " This will enable code folding.
@@ -277,7 +274,6 @@ endfunction
 
 " }}}
 
-
 " STATUS LINE ------------------------------------------------------------ {{{
 
 "    %F – Display the full path of the current file.
@@ -288,7 +284,7 @@ endfunction
 "
 "    %R – Displays the read-only flag.
 "
-"    %b – Shows the ASCII/Unicode character under     cursor.
+"    %b – Shows the ASCII/Unicode character under cursor.
 "
 "    0x%B – Shows the hexadecimal character under     cursor.
 "
@@ -305,17 +301,13 @@ endfunction
 set statusline=
 
 " Status line left side. (Filepath truncated, if necessary)
-set statusline+=\ .20%F\ %M\ %Y\ %R
+set statusline+=%.20F\ Modified?[%M]\ readonly?[%R]
 
 " Use a divider to separate the left side from the right side.
 set statusline+=%=
 
 " Status line right side.
-set statusline+=\ row:%l\ col:%c\ %p%% 
-
-" Show the status on the second to last line.
-set laststatus=2
-
+set statusline+=\ line:%l:%c\ %p%% 
 
 " }}}
 

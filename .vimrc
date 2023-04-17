@@ -175,12 +175,17 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " Autocompletion (https://github.com/ycm-core/YouCompleteMe)
 packadd YouCompleteMe
 
-" Clear the YCM filetype blacklist (Mostly for markdown)
+" Clear the YCM filetype blacklist (Mostly for enabling completion in markdown files)
 let g:ycm_filetype_blacklist = {}
 
 " surround.vim
 " Quoting and parenthesizing made simple
 packadd surround
+
+" scvim
+" A vim plugin for supercollider
+au BufEnter,BufWinEnter,BufNewFile,BufRead *.sc,*.scd set filetype=supercollider
+au Filetype supercollider packadd scvim
 
 " vim-airline
 " Custom statusline

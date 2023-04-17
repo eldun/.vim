@@ -12,6 +12,11 @@ endif
 " Load an indent file for the detected file type.
 filetype indent on
 
+set background=dark
+
+" Use GUI colors
+" set termguicolors
+
 " Turn syntax highlighting on.
 if has('syntax')
   syntax on
@@ -149,7 +154,7 @@ highlight Search ctermfg=Black ctermbg=DarkYellow
 highlight Folded ctermfg=White ctermbg=Black 
 
 " Set Parentheses highlighting
-" highlight MatchParen cterm=bold ctermbg=Yellow ctermfg=Black
+highlight MatchParen cterm=bold ctermbg=White ctermfg=Black
 
 " wildmenu options
 " Enable auto completion menu after pressing TAB.
@@ -169,6 +174,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " YouCompleteMe
 " Autocompletion (https://github.com/ycm-core/YouCompleteMe)
 packadd YouCompleteMe
+
+" Clear the YCM filetype blacklist (Mostly for markdown)
+let g:ycm_filetype_blacklist = {}
 
 " surround.vim
 " Quoting and parenthesizing made simple
@@ -263,6 +271,9 @@ augroup END
 "     autocmd WinLeave * set nocursorline nocursorcolumn
 "     autocmd WinEnter * set cursorline cursorcolumn
 " augroup END
+
+" Enable DoMatchParen
+autocmd VimEnter * DoMatchParen
 
 function ToggleStatusLine()
     if &laststatus!=2

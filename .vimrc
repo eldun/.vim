@@ -12,8 +12,6 @@ endif
 " Load an indent file for the detected file type.
 filetype indent on
 
-set background=dark
-
 " Use GUI colors
 " set termguicolors
 
@@ -51,12 +49,12 @@ set hidden
 set nonumber
 
 " Highlight cursor horizontally and turn off underline
-" set cursorline
-" highlight CursorLine ctermbg=Black cterm=none
+set cursorline
+highlight CursorLine ctermbg=Black cterm=none
 
 " Highlight cursor vertically 
-" set cursorcolumn
-" highlight CursorColumn ctermbg=Black
+set cursorcolumn
+highlight CursorColumn ctermbg=Black
 
 "------------------------------------------------------------
 " Indentation options {{{

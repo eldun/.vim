@@ -25,6 +25,7 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 - [Difference in map commands](https://stackoverflow.com/a/3776182)
 - [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)
 - [Multi-line Editing (Visual Block mode)](https://stackoverflow.com/a/12399573)
+- .gvimrc(as you might expect) is only used by gvim
 
 # To-do
 - Follow [this guide](https://vimways.org/2018/from-vimrc-to-vim/) (Mostly for managing my growing list of abbreviations)

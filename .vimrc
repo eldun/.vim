@@ -20,6 +20,10 @@ if has('syntax')
   syntax on
 endif
 
+" Hide senseless error highlighting in markdown (like underscores in code snippets)
+" Taken from https://github.com/tpope/vim-markdown/issues/21#issuecomment-283846940
+syn match markdownError "\w\@<=\w\@="
+
 
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple

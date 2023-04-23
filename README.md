@@ -21,6 +21,7 @@ Initial setup completed following [this guide](https://www.freecodecamp.org/news
 # Things to Remember
 - Holy moly. Don't forget that "Jump to tag under cursor" is CTRL-] and NOT CTRL-J!!!
 - Using [ctags](https://github.com/universal-ctags/ctags) ([Guide](https://learnvim.irian.to/basics/tags))
+- Running into issues with YouCompleteMe unable to find system headers? [Solution here](https://stackoverflow.com/questions/54521402/locating-iostream-in-clang-fatal-error-iostream-file-not-found/70762486#70762486).
 - `:args dir/&#42;` (or `:next dir/&#42;`)to open multiple files in their own buffers from within VIM (vim dir/&#42; from terminal)
 - [Difference in map commands](https://stackoverflow.com/a/3776182)
 - [Deleting content between XML/HTML tags](https://stackoverflow.com/a/946241)

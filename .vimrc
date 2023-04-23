@@ -207,8 +207,8 @@ nnoremap <Leader>b :buffers<CR>:buffer<Space>
 " Tap \s to toggle status bar 
 nnoremap <leader>s :call ToggleStatusLine()<CR>
 
-" Remap "jk" to escape while in insert mode
-inoremap jk <esc>
+" Remap "jk" to escape while in insert or command mode
+noremap! jk <esc>
 
 " Press the space bar to type the : character in normal mode.
 nnoremap <space> :
@@ -279,7 +279,7 @@ function ToggleStatusLine()
         set laststatus=2
     else
         set laststatus=0
-    endif
+	endif
 endfunction
 
 " }}}

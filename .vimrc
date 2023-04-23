@@ -62,19 +62,11 @@ highlight CursorColumn ctermbg=Black
 
 "------------------------------------------------------------
 " Indentation options {{{
-"
-" Indentation settings according to personal preference.
-
-" Indentation settings for using 4 spaces instead of tabs.
-" Do not change 'tabstop' from its default value of 8 with this setup.
+" Tabs are tabs. I switched to noexpandtab mostly because of issues with writing makefiles. They're more important to me now that I'm using the Ycm-Generator Plugin (which uses them to generate a config file for completion and error-checking).
+set autoindent
+set noexpandtab
+set tabstop=4
 set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-" Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-"set shiftwidth=4
-"set tabstop=4
 
 " }}}
 

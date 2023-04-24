@@ -1,0 +1,18 @@
+[submodule "scvim"]
+	path = .vim/pack/my-plugins/opt/scvim
+	url = https://github.com/supercollider/scvim.git
+[submodule "vim-surround"]
+	path = .vim/pack/my-plugins/opt/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim-airline"]
+	path = .vim/pack/my-plugins/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim-markdown"]
+	path = .vim/pack/my-plugins/opt/vim-markdown
+	url = https://github.com/preservim/vim-markdown.git
+[submodule "YCM-Generator"]
+	path = .vim/pack/my-plugins/opt/YCM-Generator
+	url = https://github.com/rdnetto/YCM-Generator.git
+[submodule "YouCompleteMe"]
+	path = .vim/pack/my-plugins/opt/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

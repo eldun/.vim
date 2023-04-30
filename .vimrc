@@ -287,12 +287,10 @@ function ToggleStatusLine()
 endfunction
 
 " consume the space typed after an abbreviation:
-" (Taken from help abbreviations)
 func Eatchar(pat)
 	let c = nr2char(getchar(0))
 	return (c =~ a:pat) ? '' : c
 endfunc
-
 " }}}
 
 " STATUS LINE ------------------------------------------------------------ {{{

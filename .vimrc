@@ -191,6 +191,10 @@ au Filetype supercollider packadd scvim
 "     let g:airline_symbols = {}
 " endif
 
+" Vim Markdown (https://github.com/preservim/vim-markdown)
+" Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
+" packadd vim-markdown
+
 " }}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
@@ -265,22 +269,29 @@ augroup END
 
 " You can split a window into sections by typing `:split` or `:vsplit`.
 " Display cursorline and cursorcolumn ONLY in active window.
-" augroup cursor_off
-"     autocmd!
-"     autocmd WinLeave * set nocursorline nocursorcolumn
-"     autocmd WinEnter * set cursorline cursorcolumn
-" augroup END
+augroup cursor_off
+    autocmd!
+    autocmd WinLeave * set nocursorline nocursorcolumn
+    autocmd WinEnter * set cursorline cursorcolumn
+augroup END
 
 " Enable DoMatchParen
 autocmd VimEnter * DoMatchParen
 
 function ToggleStatusLine()
-    if &laststatus!=2
-        set laststatus=2
-    else
-        set laststatus=0
+	if &laststatus!=2
+		set laststatus=2
+	else
+		set laststatus=0
 	endif
 endfunction
+
+" consume the space typed after an abbreviation:
+" (Taken from help abbreviations)
+func Eatchar(pat)
+	let c = nr2char(getchar(0))
+	return (c =~ a:pat) ? '' : c
+endfunc
 
 " }}}
 
@@ -325,59 +336,60 @@ set statusline+=\ line:%l:%c\ %p%%
 
 
 
-    " ENGLISH ABBREVIATIONS{{{
-        iab teh the
-        iab Teh The
-    "}}}
-    
-    
-    "CODE ABBREVIATIONS {{{
-        " BASH {{{
-            iab shebang #!/bin/bash
-        "}}}
-
-        " C++ {{{
-            iab helloc++ #include <iostream>
-                        \<CR>
-                        \<CR>int main() {
-                        \<CR>
-                        \<CR>std::cout << "Hello World!";
-                        \<CR>return 0;
-                        \<CR>
-                        \<CR>}
-
-        "}}}
-        
-        " JAVA {{{
-            iab psvm public static void main(String[] args)
-        "}}}
-
-        " JAVASCRIPT {{{
-        "}}}
-        
-        " PYTHON {{{
-        "}}}
-
-        "MARKDOWN/HTML ABBREVIATIONS {{{
-            iab mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre>
-            iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
-            iab mdlink  [name](link)
-            iab lt &lt;
-            iab gt &gt;
-            iab amp &amp;
-            iab apos &apos;
-            iab quot &quot;
-            iab ast &#42;
-        "}}}
-    "}}}
+" ENGLISH ABBREVIATIONS{{{
+iab teh the
+iab Teh The
+"}}}
 
 
+"CODE ABBREVIATIONS {{{
+" BASH {{{
+iab shebang #!/bin/bash
+"}}}
 
-    
-    " BLOG POST ABBREVIATIONS {{{
-    iab lw LWJGL
-    iab lws LWJGL's
+" C++ {{{
+iab helloc++ #include <iostream>
+			\<CR>
+			\<CR>int main() {
+				\<CR>
+				\<CR>std::cout << "Hello World!";
+				\<CR>return 0;
+				\<CR>
+				\<CR>}
 
-    "}}}
+"}}}
+
+" JAVA {{{
+iab psvm public static void main(String[] args)
+"}}}
+
+" JAVASCRIPT {{{
+"}}}
+
+" PYTHON {{{
+"}}}
+
+"MARKDOWN/HTML ABBREVIATIONS {{{
+iab mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre><ESC>?xxx<CR>ciw<C-R>=Eatchar('\s')<CR>
+
+iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
+iab mdlink  [name](link)
+iab lt &lt;
+iab gt &gt;
+iab amp &amp;
+iab apos &apos;
+iab quot &quot;
+iab ast &#42;
+"}}}
+"}}}
+
+
+
+
+" BLOG POST ABBREVIATIONS {{{
+iab lw LWJGL
+iab lws LWJGL's
+
+"}}}
 
 "}}}

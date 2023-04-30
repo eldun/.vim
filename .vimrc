@@ -339,8 +339,6 @@ set statusline+=\ line:%l:%c\ %p%%
 
 " ABBREVIATIONS {{{
 
-
-
 " ENGLISH ABBREVIATIONS{{{
 iab teh the
 iab Teh The
@@ -375,20 +373,22 @@ iab psvm public static void main(String[] args)
 "}}}
 
 "MARKDOWN/HTML ABBREVIATIONS {{{
-iab mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre><ESC>?xxx<CR>ciw<C-R>=Eatchar('\s')<CR>
+
+"Eatchar is removing the space required to complete the abbreviation expansion
+
+iab <silent> mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre><ESC>?xxx<CR>ciw<C-R>=Eatchar('\s')<CR>
 
 iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
 iab mdlink  [name](link)
-iab lt &lt;
-iab gt &gt;
-iab amp &amp;
-iab apos &apos;
-iab quot &quot;
-iab ast &#42;
+iab lt &lt;<C-R>=Eatchar('\s')<CR>
+iab gt &gt;<C-R>=Eatchar('\s')<CR>
+iab pnd &#35;<C-R>=Eatchar('\s')<CR>
+iab amp &amp;<C-R>=Eatchar('\s')<CR>
+iab apos &apos;<C-R>=Eatchar('\s')<CR>
+iab quot &quot;<C-R>=Eatchar('\s')<CR>
+iab ast &#42;<C-R>=Eatchar('\s')<CR>
 "}}}
 "}}}
-
-
 
 
 " BLOG POST ABBREVIATIONS {{{

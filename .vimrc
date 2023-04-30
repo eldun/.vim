@@ -20,6 +20,11 @@ if has('syntax')
   syntax on
 endif
 
+" Highlight fenced code blocks in markdown
+" https://vimtricks.com/p/highlight-syntax-inside-markdown/
+let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'cpp']  
+let g:markdown_syntax_conceal = 0
+
 " Hide senseless error highlighting in markdown (like underscores in code snippets)
 " Taken from https://github.com/tpope/vim-markdown/issues/21#issuecomment-283846940
 syn match markdownError "\w\@<=\w\@="

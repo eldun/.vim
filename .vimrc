@@ -286,7 +286,9 @@ function ToggleStatusLine()
 	endif
 endfunction
 
-" consume the space typed after an abbreviation:
+" Consume the space typed after an abbreviation
+" e.g. iabbr <silent> if if ()<Left><C-R>=Eatchar('\s')<CR>
+" (Taken from :help abbreviations)
 func Eatchar(pat)
 	let c = nr2char(getchar(0))
 	return (c =~ a:pat) ? '' : c

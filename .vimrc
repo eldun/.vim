@@ -19,9 +19,6 @@ filetype indent on
 if has('syntax')
   syntax on
 endif
-
-" Highlight fenced code blocks in markdown
-" https://vimtricks.com/p/highlight-syntax-inside-markdown/
 let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'cpp']  
 let g:markdown_syntax_conceal = 0
 
@@ -376,7 +373,17 @@ iab psvm public static void main(String[] args)
 
 "Eatchar is removing the space required to complete the abbreviation expansion
 
-iab <silent> mdsnippet <pre><code class="language-xxx"><CR><CR></code></pre><ESC>?xxx<CR>ciw<C-R>=Eatchar('\s')<CR>
+" This is the "Correct Way" to do code snippets. I can't seem to get proper fenced highlighting in markdown documents when I use this method, though. So I'm switching to backticks.
+iab <silent> propersnp <pre><CR><Tab><code class="language-xxx"><CR><CR></code><CR><BS></pre><ESC>?xxx<CR>ciw<C-R>=Eatchar('\s')<CR>
+
+" The most flexible snippet abbreviation
+iab <silent> snp ```<CR>```<ESC>kA<C-R>=Eatchar('\s')<CR>
+
+iab <silent> cppsnp ```cpp<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
+iab <silent> pysnp ```python<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
+iab <silent> javasnp ```java<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
+iab <silent> kotlinsnp ```kotlin<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
+iab <silent> pysnp ```python<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
 
 iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
 iab mdlink  [name](link)

@@ -383,7 +383,6 @@ iab <silent> cppsnp ```cpp<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
 iab <silent> pysnp ```python<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
 iab <silent> javasnp ```java<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
 iab <silent> kotlinsnp ```kotlin<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
-iab <silent> pysnp ```python<CR>```<ESC>O<C-R>=Eatchar('\s')<CR>
 
 iab mdimg ![alt](/assets/images/blog-images/xxxx/xxxx.png)
 iab mdlink  [name](link)
